@@ -39,12 +39,12 @@ public class jOptionPane {
 			parar = 0;
 			ganhar = ganhador();
 			if (ganhar == 2) {
-				JOptionPane.showMessageDialog(null,"Jogador 2 é o vencedor");
+				JOptionPane.showMessageDialog(null,"Jogador 2 Ã© o vencedor");
 				parar = 1;
 				i = 10;
 
 			} else if (ganhar == 1) {
-				JOptionPane.showMessageDialog(null,"Jogador 1 é o vencedor");
+				JOptionPane.showMessageDialog(null,"Jogador 1 Ã© o vencedor");
 				parar = 1;
 				i = 10;
 
@@ -70,12 +70,12 @@ public class jOptionPane {
 				parar = 0;
 				ganhar = ganhador();
 				if (ganhar == 2) {
-					JOptionPane.showMessageDialog(null,"Jogador 2 é o vencedor");
+					JOptionPane.showMessageDialog(null,"Jogador 2 Ã© o vencedor");
 					parar = 1;
 					i = 10;
 
 				} else if (ganhar == 1) {
-					JOptionPane.showMessageDialog(null,"Jogador 1 é o vencedor");
+					JOptionPane.showMessageDialog(null,"Jogador 1 Ã© o vencedor");
 					parar = 1;
 					i = 10;
 
@@ -108,7 +108,7 @@ public class jOptionPane {
 			}
 			if (jogo[0][0] == "o" && jogo[0][1] == "o" && jogo[0][2] == "o"
 					|| jogo[0][0] == "o" && jogo[1][0] == "o" && jogo[2][0] == "o"
-					|| jogo[1][0] == "o" && jogo[1][1] == "o" && jogo[1][2] == "o"
+					|| jogo[1][0] == "o" && jogo[1][1] == "o" && jogo[1][1] == "o"
 					|| jogo[0][1] == "o" && jogo[1][1] == "o" && jogo[2][1] == "o"
 					|| jogo[2][0] == "o" && jogo[2][1] == "o" && jogo[2][2] == "o"
 					|| jogo[0][2] == "o" && jogo[1][2] == "o" && jogo[2][2] == "o"
