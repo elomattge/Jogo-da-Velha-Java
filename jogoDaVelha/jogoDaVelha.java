@@ -36,27 +36,22 @@ public class jogoDaVelha {
 					tabuleiro();
 					parar = 1;
 				}
-
 			}
 			parar = 0;
 			ganhar = ganhador();
 			if (ganhar == 2) {
-				System.out.println("Jogador 2 é o vencedor");
+				System.out.println("Jogador 2 Ã© o vencedor");
 				parar = 1;
 				i = 10;
-
 			} else if (ganhar == 1) {
-				System.out.println("Jogador 1 é o vencedor");
+				System.out.println("Jogador 1 Ã© o vencedor");
 				parar = 1;
 				i = 10;
-
 			}
 			if (i == 9) {
 				i = 10;
 				System.out.println("empate");
-
-			} else {
-
+			} else if(i!=10){
 				while (parar == 0) {
 					System.out.println("Jogador 2: informe a linha:  ");
 					l2 = sc.nextInt();
@@ -69,25 +64,24 @@ public class jogoDaVelha {
 						tabuleiro();
 						parar = 1;
 					}
-
 				}
 				parar = 0;
 				ganhar = ganhador();
 				if (ganhar == 2) {
-					System.out.println("Jogador 2 é o vencedor");
+					System.out.println("Jogador 2 Ã© o vencedor");
 					parar = 1;
 					i = 10;
 
 				} else if (ganhar == 1) {
-					System.out.println("Jogador 1 é o vencedor");
+					System.out.println("Jogador 1 Ã© o vencedor");
 					parar = 1;
 					i = 10;
-
 				}
-
+			}else{
+				i=10;
 			}
+			
 		} while (i < 9);
-
 	}
 
 	static void tabuleiro() {
@@ -95,9 +89,8 @@ public class jogoDaVelha {
 		System.out.println("0 " + jogo[0][0] + "|" + jogo[0][1] + "|" + jogo[0][2]);
 		System.out.println("1 " + jogo[1][0] + "|" + jogo[1][1] + "|" + jogo[1][2]);
 		System.out.println("2 " + jogo[2][0] + "|" + jogo[2][1] + "|" + jogo[2][2]);
-
 	}
-
+	
 	static int ganhador() {
 		for (int i = 0; i < 4; i++) {
 			if (jogo[0][0] == "x" && jogo[0][1] == "x" && jogo[0][2] == "x"
@@ -120,11 +113,7 @@ public class jogoDaVelha {
 					|| jogo[0][2] == "o" && jogo[1][1] == "o" && jogo[2][0] == "o") {
 				ganhar = 1;
 			}
-
 		}
-
 		return ganhar;
-
 	}
-
 }
