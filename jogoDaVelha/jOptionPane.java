@@ -47,7 +47,6 @@ public class jOptionPane {
 				JOptionPane.showMessageDialog(null,"Jogador 1 é o vencedor");
 				parar = 1;
 				i = 10;
-
 			}
 			if (i == 9) {
 				i = 10;
@@ -65,7 +64,6 @@ public class jOptionPane {
 						tabuleiro();
 						parar = 1;
 					}
-
 				}
 				parar = 0;
 				ganhar = ganhador();
@@ -78,20 +76,16 @@ public class jOptionPane {
 					JOptionPane.showMessageDialog(null,"Jogador 1 é o vencedor");
 					parar = 1;
 					i = 10;
-
 				}
-
 			}
 			else {
 				i=10;
 			}
 		} while (i < 9);
-
 	}
 
 	static void tabuleiro() {
 		JOptionPane.showMessageDialog(null," 0  1  2 \n0 " + jogo[0][0] + "|" + jogo[0][1] + "|" + jogo[0][2]+"\n1 " + jogo[1][0] + "|" + jogo[1][1] + "|" + jogo[1][2]+"\n2 " + jogo[2][0] + "|" + jogo[2][1] + "|" + jogo[2][2]);
-
 	}
 
 	static int ganhador() {
@@ -116,11 +110,7 @@ public class jOptionPane {
 					|| jogo[0][2] == "o" && jogo[1][1] == "o" && jogo[2][0] == "o") {
 				ganhar = 1;
 			}
-
 		}
-
 		return ganhar;
-
 	}
-
 }
